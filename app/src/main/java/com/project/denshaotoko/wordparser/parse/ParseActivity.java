@@ -64,6 +64,7 @@ public class ParseActivity extends DaggerAppCompatActivity implements ParseContr
         // load translate animation
         mTranslateAnimation = AnimationUtils.loadAnimation(this,
                 R.anim.anim_translate);
+
     }
 
     @Override

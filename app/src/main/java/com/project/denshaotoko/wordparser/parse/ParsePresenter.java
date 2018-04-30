@@ -15,6 +15,8 @@ public class ParsePresenter implements ParseContract.Presenter {
 
     private final DictionaryTrie mDictionaryTrie;
 
+    private boolean firstTimeLoad = true;
+
     @Nullable
     private ParseContract.View mParseView;
 
@@ -26,7 +28,11 @@ public class ParsePresenter implements ParseContract.Presenter {
     @Override
     public void takeView(ParseContract.View view) {
         mParseView = view;
-        initDictionary();
+        //load one time on first launch
+        if(firstTimeLoad) {
+            initDictionary();
+            firstTimeLoad = false;
+        }
     }
 
     @Override
