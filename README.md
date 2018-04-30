@@ -24,6 +24,7 @@
 
 ## TODO
 * Detailed unit tests need to be added.
+* Code clean up
 
 ## Author
 Sarath
