@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WordParser</string>
+    <string name="enter_input">Enter broken text here</string>
+    <string name="button_parse">PARSE</string>
+</resources>
